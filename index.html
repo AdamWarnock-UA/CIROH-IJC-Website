@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CIROH and IJC Collaborative Projects</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header class="container-fluid text-white py-3 text-center" style="background: #900f0f;">
+      <h1>CIROH and IJC Collaborative Projects</h1>
+    </header>
+    <!-- Hero -->
+    <section
+      class="text-center bg-image"
+      style="
+        background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/041.webp');
+        height: 400px;
+      "
+    >
+      <div
+        class="mask w-100 h-100 p-5"
+        style="background-color: rgba(0, 0, 0, 0.6)"
+      >
+        <div class="d-flex justify-content-center align-items-center h-100">
+          <div class="text-white">
+            <p>
+              A series of projects have been awarded to the CIROH researchers by
+              the International Joint Commission (IJC) to prepare inputs
+              (downscaled, bias-corrected, and disaggregated climate change
+              projections) and develop tools (hydrological models) required to
+              support water resources analysis in the Souris River Watershed.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero -->
+    <section class="container-fluid">
+      <h2 class="text-center display-1">Partners</h2>
+      <div class="row p-3">
+        <div class="col-sm-6 d-flex justify-content-center align-self-center">
+          <img style="width: 300px" src="images/CIROH logo_Title.png" />
+        </div>
+        <div class="col-sm-6 d-flex justify-content-center align-self-center">
+          <img style="width: 300px" src="images/IJC logo.svg" />
+        </div>
+      </div>
+      <div class="row p-3">
+        <div class="col-sm-4 d-flex justify-content-center align-self-center">
+          <img
+            style="width: 300px"
+            src="images/UA-StackedNameplate_WithDate.png"
+          />
+        </div>
+        <div class="col-sm-4 d-flex justify-content-center align-self-center">
+          <img style="width: 300px" src="images/UCalgary logo.svg" />
+        </div>
+        <div class="col-sm-4 d-flex justify-content-center align-self-center">
+          <img style="width: 300px" src="images/usask logo.png" />
+        </div>
+      </div>
+      <div class="row p-3">
+        <div class="col d-flex justify-content-center align-self-center">
+          <img style="width: 300px" src="images/UHawaii Manoa logo.png" />
+        </div>
+      </div>
+    </section>
+    <main class="container-sm">
+      <h2>
+        Project 2. Preparing the Inputs and Tools Required to Support the
+        Climate Change Modeling Chain for Application to Water Resources
+        Analysis in the Souris River Watershed
+      </h2>
+      <p>
+        The Project 2 is undertaken to produce historical downscaled,
+        bias-corrected, and disaggregated set of atmospheric inputs for the
+        hydrological models. The project also intends to investigate the
+        reliability of atmospheric inputs produced by two different downscaling
+        and bias-correction techniques to generate evaluated and proven dataset
+        for the entire Souris River Basin (SRB).
+      </p>
+      <h3>Goals</h3>
+      <ul>
+        <li>
+          Develop future downscaled, bias corrected, and disaggregated climate
+          variables
+          <ul>
+            <li>
+              Daily surface timeseries for six variables (e.g., Precipitation,
+              temperature, specific humidity, incoming longwave radiation,
+              incoming shortwave radiation, and barometric pressure)
+            </li>
+            <li>3-hourly timestep for all variables from 2015 to 2100</li>
+            <li>
+              SSP2-4.5, SSP3-7.0, and SSP5-8.5 for a subset of 12 General
+              Circulation Models (GCMs) with a rationale for selection of GCM
+              subset from the CMIP6 GCMs
+            </li>
+            <li>
+              Workflow for future extension to the North American domain and to
+              cover other transboundary river basins
+            </li>
+          </ul>
+        </li>
+        <li>
+          Provide a description of the limitations of the final dataset along
+          with a plan to make further improvements
+        </li>
+      </ul>
+      <h3>Research Activities</h3>
+      <h4>1. Bias correction and downscaling</h4>
+      <p>
+        The project used a state-of-the-art downscaling and bias-correction
+        method known as Semi-Parametric Quantile Mapping (SPQM, Rajulapati and
+        Papalexiou, 2023) to produce historical and future climate change
+        projections data for the entire North America as shown in the map below.
+        Using the SPQM method, the downscaled and bias-corrected daily
+        precipitation, minimum and maximum temperature were produced, and the
+        data were stored for 15 regions (see the map) for the convenience.
+      </p>
+      <h4>2. Temporal disaggregation</h4>
+      <p>
+        The key part of the project is to generate 3-hourly disaggregated
+        climate data for six variables (listed under the project goals) using
+        MetSim (Bennett et al., 2020) method based on the downscaled and
+        bias-corrected daily climate variables (precipitation and
+        minimum/maximum temperature). A total of 12 GCMs was selected to produce
+        the downscaled, bias corrected and disaggregated data. Each model
+        includes a complete set of three climate change scenarios (ssp245,
+        ssp370, ssp585) to be considered, all utilizing consistent
+        realization/forcing. Although downscaled and bias-corrected daily
+        climate variables are made available for the North America (1-15 regions
+        on the map), the 3-hourly disaggregated data are produced for four
+        regions (regions 7, 8, 10, and 11) covering the Souris River Basin.
+      </p>
+      <h4>3. Data Storage, Dissemination, and Public Repository</h4>
+      <p>
+        The 3-hourly disaggregated climate data for six variables are stored on
+        the Graham server of Compute Canada (graham.computecanada.ca). The data
+        will be made available upon request
+      </p>
+      <img src="images/US-Canada-regional-map.jpg" />
+      <h2>Project Team</h2>
+      <div class="row">
+        <div class="col-sm-6 my-2">
+          <strong>Steven Burian</strong><br />
+          Principal Investigator <br />
+          CIROH, The University of Alabama
+        </div>
+        <div class="col-sm-6 my-2">
+          <strong>Shahabul Alam</strong><br />
+          CIROH, The University of Alabama
+        </div>
+        <div class="col-sm-6 my-2">
+          <strong>Thomas Giambelluca</strong><br />
+          University of Hawaii at Manoa
+        </div>
+        <div class="col-sm-6 my-2">
+          <strong>Xiao Luo</strong><br />
+          University of Hawaii at Manoa
+        </div>
+      </div>
+      <h3>Collaborators</h3>
+      <div class="row">
+        <div class="col-sm-6 my-2">
+          <strong>Martyn Clark</strong><br />
+          University of Calgary, University of Saskatchewan
+        </div>
+        <div class="col-sm-6 my-2">
+          <strong>Alain Pietroniro</strong><br />
+          University of Calgary
+        </div>
+        <div class="col-sm-6 my-2">
+          <strong>Simon Papalexiou</strong><br />
+          University of Calgary
+        </div>
+        <div class="col-sm-6 my-2">
+          <strong>Kasra Keshavarz</strong><br />
+          University of Calgary
+        </div>
+        <div class="col-sm-6 my-2">
+          <strong>Heba Abdelmoaty</strong><br />
+          University of Calgary
+        </div>
+        <div class="col-sm-6 my-2">
+        <strong>Chandra Rajulapati</strong><br />
+          University of Manitoba
+        </div>
+      </div>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
