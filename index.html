@@ -12,10 +12,32 @@
     />
   </head>
   <body>
-    <header class="container-fluid text-white py-3 text-center" style="background: #900f0f;">
+    <header
+      class="container-fluid text-white py-3 text-center"
+      style="background: #900f0f"
+    >
       <h1>CIROH and IJC Collaborative Projects</h1>
+      <!-- START Nav -->
+      <nav class="navbar navbar-expand navbar-dark d-flex justify-content-evenly">
+        <div class="nav navbar-nav w-100 d-flex justify-content-evenly">
+          <a class="nav-item nav-link" href="#partners" aria-current="page">
+            Partners
+          </a>
+          <a class="nav-item nav-link" href="#climate-planning-srb">
+            Project 1
+          </a>
+          <a class="nav-item nav-link" href="#inputs-and-tools-srb">
+            Project 2
+          </a>
+          <a class="nav-item nav-link" href="#team">
+            Project Team
+          </a>
+        </div>
+      </nav>
+
+      <!-- END Nav -->
     </header>
-    <!-- Hero -->
+    <!-- START Hero -->
     <section
       class="text-center bg-image"
       style="
@@ -30,18 +52,21 @@
         <div class="d-flex justify-content-center align-items-center h-100">
           <div class="text-white">
             <p>
-              A series of projects have been awarded to the CIROH researchers by
-              the International Joint Commission (IJC) to prepare inputs
-              (downscaled, bias-corrected, and disaggregated climate change
-              projections) and develop tools (hydrological models) required to
-              support water resources analysis in the Souris River Watershed.
+              The International Joint Commission (IJC) has awarded several
+              projects to CIROH researchers. These projects aim to generate
+              input data for hydrological models that are relevant to the local
+              conditions and develop the tools representing dominant
+              hydrological processes required to support water resources
+              analysis in the Souris River Basin (SRB).
             </p>
           </div>
         </div>
       </div>
     </section>
-    <!-- Hero -->
+    <!-- END Hero -->
+    <!-- START Partners -->
     <section class="container-fluid">
+      <a id="partners"></a>
       <h2 class="text-center display-1">Partners</h2>
       <div class="row p-3">
         <div class="col-sm-6 d-flex justify-content-center align-self-center">
@@ -71,81 +96,99 @@
         </div>
       </div>
     </section>
+    <!-- END Partners -->
+    <!-- START Projects -->
     <main class="container-sm">
-      <h2>
-        Project 2. Preparing the Inputs and Tools Required to Support the
-        Climate Change Modeling Chain for Application to Water Resources
-        Analysis in the Souris River Watershed
-      </h2>
-      <p>
-        The Project 2 is undertaken to produce historical downscaled,
-        bias-corrected, and disaggregated set of atmospheric inputs for the
-        hydrological models. The project also intends to investigate the
-        reliability of atmospheric inputs produced by two different downscaling
-        and bias-correction techniques to generate evaluated and proven dataset
-        for the entire Souris River Basin (SRB).
-      </p>
-      <h3>Goals</h3>
-      <ul>
-        <li>
-          Develop future downscaled, bias corrected, and disaggregated climate
-          variables
-          <ul>
-            <li>
-              Daily surface timeseries for six variables (e.g., Precipitation,
-              temperature, specific humidity, incoming longwave radiation,
-              incoming shortwave radiation, and barometric pressure)
-            </li>
-            <li>3-hourly timestep for all variables from 2015 to 2100</li>
-            <li>
-              SSP2-4.5, SSP3-7.0, and SSP5-8.5 for a subset of 12 General
-              Circulation Models (GCMs) with a rationale for selection of GCM
-              subset from the CMIP6 GCMs
-            </li>
-            <li>
-              Workflow for future extension to the North American domain and to
-              cover other transboundary river basins
-            </li>
-          </ul>
-        </li>
-        <li>
-          Provide a description of the limitations of the final dataset along
-          with a plan to make further improvements
-        </li>
-      </ul>
-      <h3>Research Activities</h3>
-      <h4>1. Bias correction and downscaling</h4>
-      <p>
-        The project used a state-of-the-art downscaling and bias-correction
-        method known as Semi-Parametric Quantile Mapping (SPQM, Rajulapati and
-        Papalexiou, 2023) to produce historical and future climate change
-        projections data for the entire North America as shown in the map below.
-        Using the SPQM method, the downscaled and bias-corrected daily
-        precipitation, minimum and maximum temperature were produced, and the
-        data were stored for 15 regions (see the map) for the convenience.
-      </p>
-      <h4>2. Temporal disaggregation</h4>
-      <p>
-        The key part of the project is to generate 3-hourly disaggregated
-        climate data for six variables (listed under the project goals) using
-        MetSim (Bennett et al., 2020) method based on the downscaled and
-        bias-corrected daily climate variables (precipitation and
-        minimum/maximum temperature). A total of 12 GCMs was selected to produce
-        the downscaled, bias corrected and disaggregated data. Each model
-        includes a complete set of three climate change scenarios (ssp245,
-        ssp370, ssp585) to be considered, all utilizing consistent
-        realization/forcing. Although downscaled and bias-corrected daily
-        climate variables are made available for the North America (1-15 regions
-        on the map), the 3-hourly disaggregated data are produced for four
-        regions (regions 7, 8, 10, and 11) covering the Souris River Basin.
-      </p>
-      <h4>3. Data Storage, Dissemination, and Public Repository</h4>
-      <p>
-        The 3-hourly disaggregated climate data for six variables are stored on
-        the Graham server of Compute Canada (graham.computecanada.ca). The data
-        will be made available upon request
-      </p>
-      <img src="images/US-Canada-regional-map.jpg" />
+      <a id="projects"></a>
+      <h2 class="text-center display-1">Projects</h2>
+      <!-- START Project 1 -->
+      <article>
+        <a id="climate-planning-srb"></a>
+        <h3>
+          Climate Downscaling for Adaptation Planning in the Souris River Basin
+        </h3>
+        <p>
+          In 2022, the IJC highlighted the need for collaborative efforts in
+          developing bias-corrected and downscaled (i.e., relevant to the local
+          conditions) climate projections across borders. This project aims to
+          improve downscaled climate scenarios for the SRB.
+        </p>
+        <h4>Objectives</h4>
+        <p>
+          This project aims to provide valuable data for water resources
+          management and adaptation planning in the SRB by generating reliable
+          and robust downscaled-climate change projections spanning the years
+          2015-2100.
+        </p>
+        <h4>Research Activities</h4>
+        <ol>
+          <li>
+            Develop bias-corrected downscaled and disaggregated CMIP6 General
+            Circulation Models (GCMs) climate variables:
+            <ul>
+              <li>
+                Focus on the SRB domain, with potential to extend to the North
+                American domain and other transboundary river basins.
+              </li>
+              <li>
+                Focus on variables like precipitation, temperature, specific
+                humidity, wind speed, outgoing longwave radiation, incoming
+                shortwave radiation, and barometric pressure.
+              </li>
+              <li>
+                Generate sub-daily data from 2015-2100 with a 3-hour timestep
+                based on 12 selected GCMs and three Shared Socioeconomic
+                Pathways (SSPs), i.e., SSP245, SSP370, SSP585.
+              </li>
+            </ul>
+          </li>
+          <li>
+            Assessment and Improvement:
+            <ul>
+              <li>
+                Identify dataset limitations and enhancement opportunities.
+              </li>
+            </ul>
+          </li>
+        </ol>
+      </article>
+      <!-- END Project 1 -->
+      <!-- START Project  2-->
+      <article>
+        <a id="inputs-and-tools-srb"></a>
+        <h3>
+          Preparing the Inputs and Tools Required to Support the Climate Change Modeling Chain for Application to Water Resources Analysis in the Souris River Basin
+        </h3>
+        <p>
+          This project aims to develop bias-corrected downscaled sub-daily climate datasets over the Souris River Basin covering the years 1850-2014 to address limitations in existing techniques and the lack of binational atmospheric inputs for complex hydrological models.
+        </p>
+        <h4>Objectives</h4>
+        <p>
+          Project 2 is undertaken to provide reliable and robust downscaled climate scenarios for a historical period (i.e., 1850-2014) for adaptation planning in the SRB. This project will provide essential data for informed decision-making and climate resilience planning in the SRB
+        </p>
+        <h4>Research Activities</h4>
+        <ol>
+          <li>
+            <strong>Dataset Development:</strong> Produce reliable downscaled historical climate datasets for the SRB using advanced prevailing techniques.
+          </li>
+          <li>
+            <strong>Evaluation:</strong> Evaluate downscaled and bias-corrected datasets by comparing different downscaled datasets to determine their reliability.
+          </li>
+          <li>
+            <strong>Atmospheric Inputs:</strong> Generate comprehensive disaggregated sub-daily atmospheric input data (same climate variables as Project 1) for hydrological models.
+          </li>
+          <li>
+            <strong>Adaptation Planning:</strong> Develop a framework for large-scale climate adaptation strategies.
+          </li>
+        </ol>
+        <img src="images/US-Canada-regional-map.jpg" />
+      </article>
+      <!-- END Project  2-->
+    </main>
+    <!-- END Projects -->
+    <!-- START Project Team -->
+    <section class="container-fluid">
+      <a id="team"></a>
       <h2>Project Team</h2>
       <div class="row">
         <div class="col-sm-6 my-2">
@@ -189,11 +232,12 @@
           University of Calgary
         </div>
         <div class="col-sm-6 my-2">
-        <strong>Chandra Rajulapati</strong><br />
+          <strong>Chandra Rajulapati</strong><br />
           University of Manitoba
         </div>
       </div>
-    </main>
+    </section>
+    <!-- END Project Team -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
